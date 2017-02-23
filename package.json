@@ -1,0 +1,27 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Personal website of Ashwin.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwinath/personal-site.git"
+  },
+  "keywords": [
+    "ashwin",
+    "personal-site"
+  ],
+  "author": "Ashwin Nath Chatterji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashwinath/personal-site/issues"
+  },
+  "homepage": "https://github.com/ashwinath/personal-site#readme",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1"
+  }
+}
