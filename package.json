@@ -4,9 +4,7 @@
   "description": "Personal website of Ashwin.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
-    "cover": "istanbul cover _mocha",
-    "coveralls": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -28,8 +26,6 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.16",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha": "^3.2.0"
   }
 }
