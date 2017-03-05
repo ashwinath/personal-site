@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 // CONTACT ME
 router.post('/contact', (req, res) => {
   var contactObject = req.body.contact;
-  var subject = contactObject.name + ' has contacted you!';
+  var subject = '[WEBSITE]' + contactObject.name + ' has contacted you!';
   var success = EmailManager.sendEmail(subject, contactObject, EmailManager.formatContactMe);
   res.send("Success!")
 });
