@@ -5,10 +5,13 @@
   <!-- jumbotron introduction -->
   <div class="jumbotron">
     <h1>ashwin.chat</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor elit a orci laoreet rhoncus. Vestibulum in lectus urna. Mauris et orci venenatis, blandit nibh sit amet, venenatis sapien.</p>
     <p>
-      <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/ashwin-chatterji-87702b50/" role="button">Linkedin</a>
+      I am a self taught developer who also holds a degree in business (marketing). During my university as a marketing student, I learnt major components of computer science as well as programming. I enjoy writing software and still continue to do it as my job, as well as during my free time.
+    </p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/ashwin-chatterji-87702b50/" role="button">View Linkedin</a>
       <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/126JIerPmORpVs4Uoy3Uw4GPPYhMmEC3bfvBoPrMqS-Y/edit?usp=sharing" role="button">View Resume</a>
+      <a class="btn btn-primary btn-lg" href="/blog" role="button">View Blog</a>
     </p>
   </div>
   <!-- jumbotron introduction end -->
@@ -23,46 +26,22 @@
   <!-- portfolio start -->
   <div class="row">
 
+  <% portfolio.forEach(project => { %>
+
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg">
+        <img src="<%= project.picture %>">
         <div class="caption">
-          <h3>Thumbnail label</h3>
+          <h3><%= project.title %></h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ex a purus vestibulum bibendum. Aenean eget gravida est. Aenean pretium ipsum libero, sed faucibus enim ornare vel. Nulla ultricies suscipit sem vel vulputate. In hac habitasse platea dictumst. Mauris vehicula purus eget sapien efficitur, eget vulputate risus rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id tempor risus.
+            <%= project.description %>
           </p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+          <p><a href="<%= project.github %>" class="btn btn-primary" role="button">GitHub</a></p>
         </div>
       </div>
     </div>
 
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ex a purus vestibulum bibendum. Aenean eget gravida est. Aenean pretium ipsum libero, sed faucibus enim ornare vel. Nulla ultricies suscipit sem vel vulputate. In hac habitasse platea dictumst. Mauris vehicula purus eget sapien efficitur, eget vulputate risus rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id tempor risus.
-          </p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail">
-        <img src="http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet ex a purus vestibulum bibendum. Aenean eget gravida est. Aenean pretium ipsum libero, sed faucibus enim ornare vel. Nulla ultricies suscipit sem vel vulputate. In hac habitasse platea dictumst. Mauris vehicula purus eget sapien efficitur, eget vulputate risus rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam id tempor risus.
-          </p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
-        </div>
-      </div>
-    </div>
-
-  </div>
+  <% }); %>
   <!-- portfolio end -->
 
   <!-- contact me header-->

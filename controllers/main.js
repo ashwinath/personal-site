@@ -1,6 +1,7 @@
-var express    = require('express'),
-    router     = express.Router(),
-    bodyParser = require('body-parser'),
+var express      = require('express'),
+    router       = express.Router(),
+    bodyParser   = require('body-parser'),
+    portfolio    = require('../data/portfolio'),
     EmailManager = require('../mediators/EmailManager');
 
 router.use(bodyParser.urlencoded({
@@ -10,7 +11,7 @@ router.use(bodyParser.json());
 
 // MAIN PAGE
 router.get('/', (req, res) => {
-  res.render('mainPage/index');
+  res.render('mainPage/index', { portfolio: portfolio });
 });
 
 // CONTACT ME
