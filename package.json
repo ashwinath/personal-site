@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/ashwinath/personal-site#readme",
   "dependencies": {
+    "body-parser": "^1.17.0",
     "ejs": "^2.5.6",
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "nodemailer": "^3.1.4"
   },
   "devDependencies": {
     "mocha": "^3.2.0"
