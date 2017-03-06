@@ -3,14 +3,14 @@ var gulp      = require('gulp'),
     watchLess = require('gulp-watch-less');
 
 gulp.task('less', () => {
-  gulp.src('less/*.less')
+  gulp.src('less/main.less')
       .pipe(less())
       .pipe(gulp.dest('public/css'))
 });
 
 gulp.task('watchless', () => {
-  return gulp.src('less/*.less')
-             .pipe(watchLess('less/*.less'))
+  return gulp.src('less/main.less')
+             .pipe(watchLess('less/main.less'))
              .pipe(less())
              .pipe(gulp.dest('public/css'))
 });

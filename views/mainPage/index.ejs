@@ -52,27 +52,29 @@
   <!-- contact me header end-->
 
   <!-- contact me -->
-  <form action="/contact" method="post" class="col-lg-8 col-lg-offset-2">
-    <div class="form-group input-group input-group-lg">
-      <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1"></span>
-      <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
-    </div>
+  <form action="/contact" method="post" class="col-lg-8 col-lg-offset-2 form-horizontal">
+    <fieldset>
+      <div class="form-group input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1"></span>
+        <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
+      </div>
 
-    <div class="form-group input-group input-group-lg">
-      <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
-      <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
-    </div>
+      <div class="form-group input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
+        <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
+      </div>
 
-    <div class="form-group input-group input-group-lg">
-      <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1"></span>
-      <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
-    </div>
+      <div class="form-group input-group input-group-lg">
+        <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1"></span>
+        <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
+      </div>
 
-    <div class="form-group">
-      <textarea name="contact[message]" class="form-control" placeholder="Message" rows="8"></textarea>
-    </div>
+      <div class="form-group">
+        <textarea name="contact[message]" class="form-control" placeholder="Message" rows="8"></textarea>
+      </div>
 
-    <button class="btn btn-lg btn-primary" type="submit">Submit!</button>
+      <button class="btn btn-lg btn-primary" type="submit">Submit!</button>
+    </fieldset>
 
   </form>
   <!-- contact me end -->
