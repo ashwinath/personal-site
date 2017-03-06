@@ -3,7 +3,7 @@
 <div class="container">
 
   <!-- jumbotron introduction -->
-  <div id="main-title" class="jumbotron text-center">
+  <div class="jumbotron text-center">
     <h1>ashwin.chat</h1>
     <p>
       I am a self taught developer whom also hold a degree in business (marketing). During my university as a marketing student, I learnt a fair bit of computer science as well as programming. I enjoy writing software and still continue to do it as my job, as well as during my free time.
@@ -52,31 +52,33 @@
   <!-- contact me header end-->
 
   <!-- contact me -->
-  <form action="/contact" method="post" class="col-lg-8 col-lg-offset-2 form-horizontal">
-    <fieldset>
-      <div class="form-group input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1"></span>
-        <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
-      </div>
+  <div class="col-lg-8 col-lg-offset-2">
+    <form action="/contact" method="post" class="form-horizontal">
+      <fieldset>
+        <div class="form-group input-group input-group-lg">
+          <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1"></span>
+          <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
+        </div>
 
-      <div class="form-group input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
-        <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
-      </div>
+        <div class="form-group input-group input-group-lg">
+          <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
+          <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
+        </div>
 
-      <div class="form-group input-group input-group-lg">
-        <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1"></span>
-        <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
-      </div>
+        <div class="form-group input-group input-group-lg">
+          <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1"></span>
+          <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
+        </div>
 
-      <div class="form-group">
-        <textarea name="contact[message]" class="form-control" placeholder="Message" rows="8"></textarea>
-      </div>
+        <div class="form-group">
+          <textarea name="contact[message]" class="form-control" placeholder="Message" rows="8"></textarea>
+        </div>
 
-      <button class="btn btn-lg btn-primary" type="submit">Submit!</button>
-    </fieldset>
+        <button class="btn btn-lg btn-primary" type="submit">Submit!</button>
+      </fieldset>
 
-  </form>
+    </form>
+  </div>
   <!-- contact me end -->
   
 </div>

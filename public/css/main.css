@@ -6988,5 +6988,6 @@ a.list-group-item-danger.active:focus {
   color: #2C3E50;
 }
 body {
+  padding-top: 80px;
   padding-bottom: 40px;
 }
