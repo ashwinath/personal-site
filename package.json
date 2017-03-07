@@ -4,6 +4,7 @@
   "description": "Personal website of Ashwin.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "mocha",
     "gulp": "gulp less",
     "gulpwatch": "gulp watchless"
