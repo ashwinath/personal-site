@@ -3,7 +3,7 @@ var express        = require('express'),
     app            = express(),
     mainController = require('./controllers/main')
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Settings
 app.set('view engine', 'ejs');
