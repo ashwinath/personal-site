@@ -27,7 +27,13 @@ router.get('/', (req, res) => {
 router.post('/contact', (req, res) => {
   var contactObject = req.body.contact;
   var subject = '[WEBSITE]' + contactObject.name + ' has contacted you!';
-  var success = EmailManager.sendEmail(subject, contactObject, EmailManager.formatContactMe)
+  EmailManager.sendEmail(subject, contactObject, EmailManager.formatContactMe, (err, info) => {
+    if(err) {
+      console.log('SOMETHING WENT WRONG');
+    } else {
+      console.log('sent');
+    }
+  });
   // this indicator is to show that it has post successfully
   req.flash(FLASH_SUCCESS, FLASH_SUCCESS_MESSAGE);
   res.redirect('/');

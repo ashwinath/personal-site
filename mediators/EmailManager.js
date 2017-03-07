@@ -5,7 +5,7 @@ var EmailManager = {
 
   // formatting shld be done prior to this
   // returns false if not sent, true if sent
-  sendEmail: (subject, messageObject, formatter) => {
+  sendEmail: (subject, messageObject, formatter, callback) => {
     var transporter = nodemailer.createTransport(credentials.email);
     var emailText = formatter ? formatter(messageObject) : messageObject;
     var mailOptions = {
@@ -14,13 +14,7 @@ var EmailManager = {
       subject: subject,
       text: emailText
     }
-    transporter.sendMail(mailOptions, (err, info) => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log('Message sent: ' + info.response);
-      }
-    });
+    transporter.sendMail(mailOptions, callback);
   },
 
   // helper function to format email
