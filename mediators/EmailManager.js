@@ -17,10 +17,8 @@ var EmailManager = {
     transporter.sendMail(mailOptions, (err, info) => {
       if (err) {
         console.log(err);
-        return false;
       } else {
         console.log('Message sent: ' + info.response);
-        return true;
       }
     });
   },

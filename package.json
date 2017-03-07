@@ -24,8 +24,11 @@
   "homepage": "https://github.com/ashwinath/personal-site#readme",
   "dependencies": {
     "body-parser": "^1.17.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.6",
     "express": "^4.14.1",
+    "express-session": "^1.15.1",
     "nodemailer": "^3.1.4"
   },
   "devDependencies": {

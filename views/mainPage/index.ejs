@@ -1,6 +1,23 @@
 <% include ../partials/header.ejs %>
 
 <div class="container">
+  <!-- flash message -->
+  <% if(success && success != "") { %>
+    <div class="alert alert-dismissible alert-success">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <strong>Your message has been sent!</strong>
+      <p>
+        <%= success %>
+      </p>
+    </div>
+  <% } %>
+
+  <script>
+    $('.close').click(() => {
+      $('.alert').hide();
+    });
+  </script>
+  <!-- flash message end -->
 
   <!-- jumbotron introduction -->
   <div class="jumbotron text-center">
