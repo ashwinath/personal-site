@@ -69,8 +69,27 @@
   <% }); %>
   <!-- portfolio end -->
 
-  <!-- work history -->
+  <!-- work history header-->
+  <div class="col-lg-12 text-center">
+    <h2>My Work Experience</h2>
+    <hr/>
+  </div>
+  <!-- work history header end-->
 
+  <!-- work history -->
+  <% workHistoryList.forEach(workHistory => { %>
+    <div class="col-sm-12">
+
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img class="work-img" src="<%= workHistory.companyLogoSrc %>"/>
+        </div>
+      </div>
+
+      <div class="col-sm-8 well"><%= workHistory.description %></div>
+
+    </div>
+  <% }); %>
   <!-- work history end -->
 
   <!-- contact me header-->

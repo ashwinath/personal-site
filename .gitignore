@@ -3,3 +3,4 @@ nohup.out
 coveralls/
 .coveralls.yml
 scripts/deploy.sh
+npm-debug.log
