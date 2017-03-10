@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: 'This website',
-    picture: '/img/website.png',
+    picture: '/img/code.png',
     description: 'This website is built using Node.js and Express.js. Although I do a lot of backend development at work, I try to be as all rounded as possible by trying some front end development and this is my first attempt at front end web development.',
     github: 'https://github.com/ashwinath/personal-site'
   },
