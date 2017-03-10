@@ -6,5 +6,6 @@ module.exports = {
       pass: process.env.NODEMAILER_PASS
     }
   },
-  myEmail: process.env.NODEMAILER_MY_EMAIL
+  myEmail: process.env.NODEMAILER_MY_EMAIL,
+  cookieSecret: process.env.COOKIE_SECRET
 }

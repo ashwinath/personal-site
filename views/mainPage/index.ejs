@@ -53,7 +53,7 @@
 
   <% portfolio.forEach(project => { %>
 
-    <div class="col-sm-6 col-md-4">
+    <div class="col-md-4">
       <div class="thumbnail">
         <img src="<%= project.picture %>">
         <div class="caption">
@@ -69,15 +69,19 @@
   <% }); %>
   <!-- portfolio end -->
 
+  <!-- work history -->
+
+  <!-- work history end -->
+
   <!-- contact me header-->
-  <div class="col-lg-12 text-center">
+  <div class="col-sm-12 text-center">
     <h2>Contact Me</h2>
     <hr/>
   </div>
   <!-- contact me header end-->
 
   <!-- contact me -->
-  <div class="col-lg-8 col-lg-offset-2">
+  <div class="col-sm-8 col-sm-offset-2">
     <form action="/contact" method="post" class="form-horizontal">
       <fieldset>
         <div class="form-group input-group input-group-lg">

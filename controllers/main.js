@@ -1,11 +1,12 @@
-var express      = require('express'),
-    session      = require('express-session'),
-    router       = express.Router(),
-    cookieParser = require('cookie-parser'),
-    bodyParser   = require('body-parser'),
-    portfolio    = require('../data/portfolio'),
-    flash        = require('connect-flash'),
-    EmailManager = require('../mediators/EmailManager');
+const express        = require('express'),
+      router         = express.Router(),
+      session        = require('express-session'),
+      bodyParser     = require('body-parser'),
+      flash          = require('connect-flash'),
+      cookieParser   = require('cookie-parser'),
+      {cookieSecret} = require('../credentials/credentials'),
+      portfolio      = require('../data/portfolio'),
+      EmailManager   = require('../mediators/EmailManager');
 
 const FLASH_SUCCESS         = 'success',
       FLASH_SUCCESS_MESSAGE = 'Your message has been successfully sent!',
@@ -15,7 +16,7 @@ const FLASH_SUCCESS         = 'success',
 router.use(bodyParser.urlencoded({
   extended: true
 }));
-router.use(cookieParser('secret'));
+router.use(cookieParser(cookieSecret));
 router.use(bodyParser.json());
 router.use(flash());
 router.use(session({cookie: {maxAge: 60000}}))
