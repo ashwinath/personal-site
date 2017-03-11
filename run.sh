@@ -1,1 +1,1 @@
-npm install && nohup node app.js &
+source ~/.zprofile && npm install && nohup node app.js &
