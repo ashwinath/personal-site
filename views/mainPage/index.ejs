@@ -79,15 +79,15 @@
 
   <!-- work history -->
   <% workHistoryList.forEach(workHistory => { %>
-    <div class="col-sm-12">
+    <div class="">
 
-      <div class="col-sm-4">
+      <div class="col-lg-4">
         <div class="thumbnail">
           <img class="work-img" src="<%= workHistory.companyLogoSrc %>"/>
         </div>
       </div>
 
-      <div class="col-sm-8 well">
+      <div class="col-lg-8 well">
         <p>
           <div class="pull-left">
             <strong><%= workHistory.companyName %>, </strong><%= workHistory.country %> - <em><%= workHistory.role%></em>
