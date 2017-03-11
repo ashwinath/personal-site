@@ -14,6 +14,8 @@ var EmailManager = {
       subject: subject,
       text: emailText
     }
+    console.log(`Sending email.
+        Contents: ${emailText}`);
     transporter.sendMail(mailOptions, callback);
   },
 
