@@ -1,8 +1,10 @@
 <% include ../partials/header.ejs %>
 
-<div class="container">
+
   <!-- flash message -->
+  <!--
   <% if(success && success != "") { %>
+  <div class="container">
     <div class="alert alert-dismissible alert-success">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
       <strong>Your message has been sent!</strong>
@@ -10,6 +12,7 @@
         <%= success %>
       </p>
     </div>
+  </div>
   <% } else if (failure && failure != "") { %>
     <div class="alert alert-dismissible alert-danger">
       <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -20,127 +23,132 @@
     </div>
   <% } %>
 
-  <script>
-    $('.close').click(() => {
-      $('.alert').hide();
-    });
-  </script>
+
+  -->
   <!-- flash message end -->
 
-  <!-- jumbotron introduction -->
-  <div class="jumbotron text-center">
-    <h1>ashwin.chat</h1>
-    <p>
-      I am a self taught developer whom also hold a degree in business (marketing). During my university as a marketing student, I learnt a fair bit of computer science as well as programming. I enjoy writing software and still continue to do it as my job, as well as during my free time.
-    </p>
-    <p>
-      <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/ashwin-chatterji-87702b50/" role="button">View Linkedin</a>
-      <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/126JIerPmORpVs4Uoy3Uw4GPPYhMmEC3bfvBoPrMqS-Y/edit?usp=sharing" role="button">View Resume</a>
-      <a class="btn btn-primary btn-lg" href="/blog" role="button">View Blog</a>
-    </p>
-  </div>
-  <!-- jumbotron introduction end -->
-
-  <!-- portfolio header-->
-  <div class="col-lg-12 text-center">
-    <h2>My Portfolio</h2>
-    <hr/>
-  </div>
-  <!-- portfolio header end-->
-
-  <!-- portfolio start -->
-  <div class="row">
-
-  <% portfolio.forEach(project => { %>
-
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <img src="<%= project.picture %>">
-        <div class="caption">
-          <h3><%= project.title %></h3>
-          <p>
-            <%= project.description %>
-          </p>
-          <p><a href="<%= project.github %>" class="btn btn-primary" role="button">GitHub</a></p>
-        </div>
+  <!-- header introduction -->
+  <header>
+    <div class="container">
+      <div class="header-intro-grp">
+        <p class="header-intro" >Hi I'm Ashwin<p>
+        <p class="header-intro-message">Great to meet you!</p>
       </div>
     </div>
+  </header>
+  <!-- header introduction end -->
 
-  <% }); %>
-  </div>
-  <!-- portfolio end -->
-
-  <!-- work history header-->
-  <div class="col-lg-12 text-center">
-    <h2>My Work Experience</h2>
-    <hr/>
-  </div>
-  <!-- work history header end-->
-
-  <!-- work history -->
-  <% workHistoryList.forEach(workHistory => { %>
-    <div class="">
-
-      <div class="col-lg-4">
-        <div class="thumbnail">
-          <img class="work-img" src="<%= workHistory.companyLogoSrc %>"/>
-        </div>
+  <!-- about me -->
+  <section class="about-me">
+    <div class="col-lg-12 text-center header">
+      <h2>About Me</h2>
+    </div>
+    <div class="container">
+      <p class="about-me-text">
+      I am a self taught developer whom also holds a degree in Business Administration (Marketing). During my university as a marketing student, I learnt a fair bit of computer science as well as programming. I enjoy writing software and still continue to do it as my job, as well as during my free time.
+      </p>
+      <div class="col-lg-12 text-center">
+        <a href="files/Ashwin-Resume.pdf" class="btn btn-xl" role="button">Download Resume</a>
       </div>
+    </div>
+  </section>
+  <!-- about me end -->
 
-      <div class="col-lg-8 well">
-        <p>
-          <div class="pull-left">
-            <strong><%= workHistory.companyName %>, </strong><%= workHistory.country %> - <em><%= workHistory.role%></em>
+  <section class="portfolio">
+    <!-- portfolio header-->
+    <div class="col-lg-12 text-center header">
+      <h2>My Portfolio</h2>
+    </div>
+    <!-- portfolio header end-->
+
+    <!-- portfolio start -->
+    <div class="container">
+      <div class="row">
+
+      <% portfolio.forEach(project => { %>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img src="<%= project.picture %>">
+            <div class="caption">
+              <h3>
+                <%= project.title %>
+              </h3>
+              <p>
+                <%= project.description %>
+              </p>
+              <p>
+                <a href="<%= project.github %>" class="btn btn-lg" role="button">GitHub</a>
+              </p>
+            </div>
           </div>
-          <div class="pull-right">
-            <%= workHistory.start %> - <%= workHistory.end %>
+        </div>
+      <% }); %>
+
+      <!-- portfolio end -->
+    
+  </section>
+
+  <section class="work-exp">
+    <!-- work history header-->
+    <div class="col-lg-12 text-center header">
+      <h2>My Work Experience</h2>
+    </div>
+    <!-- work history header end-->
+
+    <!-- work history -->
+    <div class="container">
+      <div class="row">
+
+      <% workHistoryList.forEach(workHistory => { %>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img class="work-img img-responsive img-centered" src="<%= workHistory.companyLogoSrc %>"/>
           </div>
-          <div class="clearfix"></div>
-        </p>
-        <%= workHistory.description %>
+        </div>
+      <% }); %>
       </div>
 
     </div>
-  <% }); %>
-  <!-- work history end -->
+    </section>
+    <!-- work history end -->
 
-  <!-- contact me header-->
-  <div class="col-sm-12 text-center">
-    <h2>Contact Me</h2>
-    <hr/>
-  </div>
-  <!-- contact me header end-->
+  <section class="contact-me">
+    <!-- contact me header-->
+    <div class="col-sm-12 text-center header">
+      <h2>Contact Me</h2>
+    </div>
+    <!-- contact me header end-->
 
-  <!-- contact me -->
-  <div class="col-sm-8 col-sm-offset-2">
-    <form action="/contact" method="post" class="form-horizontal">
-      <fieldset>
-        <div class="form-group input-group input-group-lg">
-          <span class="input-group-addon glyphicon glyphicon-user" id="sizing-addon1"></span>
-          <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
+    <!-- contact me -->
+    <div class="container">
+      <form action="/contact" method="post" class="form-horizontal">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input name="contact[name]" type="text" class="form-control" placeholder="Name" aria-describedby="sizing-addon1">
+          </div>
+
+          <div class="form-group">
+            <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
+          </div>
+
+          <div class="form-group">
+            <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
+          </div>
         </div>
 
-        <div class="form-group input-group input-group-lg">
-          <span class="input-group-addon glyphicon glyphicon-envelope" id="sizing-addon1"></span>
-          <input name="contact[email]" type="email" class="form-control" placeholder="E-Mail" aria-describedby="sizing-addon1">
+        <div class="col-md-6">
+          <div class="form-group">
+            <textarea name="contact[message]" class="form-control" placeholder="Message"></textarea>
+          </div>
         </div>
 
-        <div class="form-group input-group input-group-lg">
-          <span class="input-group-addon glyphicon glyphicon-earphone" id="sizing-addon1"></span>
-          <input name="contact[phone]" type="text" class="form-control" placeholder="Contact Number" aria-describedby="sizing-addon1">
+        <div class="col-lg-12 text-center">
+            <button class="btn btn-xl" type="submit">Submit!</button>
         </div>
-
-        <div class="form-group">
-          <textarea name="contact[message]" class="form-control" placeholder="Message" rows="8"></textarea>
-        </div>
-
-        <button class="btn btn-lg btn-primary" type="submit">Submit!</button>
-      </fieldset>
-
-    </form>
-  </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <!-- contact me end -->
-  
-</div>
 
 <% include ../partials/footer.ejs %>

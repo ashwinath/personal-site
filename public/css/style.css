@@ -1,0 +1,128 @@
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 2em;
+}
+#front-nav {
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: #654321;
+  font-family: 'Clicker Script', cursive;
+  font-size: 2.5em;
+}
+
+header {
+  padding-top: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../img/splash.jpg");
+  opacity: 0.9;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+.header-intro-grp {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px #000000;
+}
+
+.header-intro {
+  font-size: 4em;
+}
+
+.header-intro-message {
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.portfolio, .contact-me {
+  background: rgba(26,26,26,.3);
+}
+
+.thumbnail {
+  margin: 0 auto;
+  background: transparent;
+  border: 0 none;
+  box-shadow:none;
+}
+
+.header h2 {
+  margin-bottom: 70px;
+  font-size: 5em;
+  font-weight: 700;
+}
+
+input.form-control, text-area.form-control {
+  padding: 20px;
+}
+
+.form-group {
+  padding: 0 20px;
+}
+
+.form-control {
+  font-size: 1.2em;
+  font-weight: 700;
+  height: auto;
+}
+
+textarea.form-control {
+  height: 260px;
+}
+
+.work-img {
+  margin: 50px auto;
+}
+
+.img-responsive {
+  margin: 50px 50px;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  background-color: #222;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 100%;
+  outline: 0;
+  display: block;
+  color: #fff;
+}
+
+.btn {
+  color: #000;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 10px;
+}
+
+.btn-xl {
+  font-size: 1.5em;
+  padding: 15px 30px;
+}
+
+.about-me-text {
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 50px;
+}

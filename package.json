@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha",
-    "gulp": "gulp less",
-    "gulpwatch": "gulp watchless"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -33,9 +31,6 @@
     "nodemailer": "^3.1.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.3.0",
-    "gulp-watch-less": "^1.0.1",
     "mocha": "^3.2.0"
   }
 }
