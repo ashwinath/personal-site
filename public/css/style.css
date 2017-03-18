@@ -153,6 +153,7 @@ ul.social-buttons li a {
 
 .portfolio-link img {
   margin: 0 auto;
+  min-height: 256px;
 }
 
 .portfolio-caption {
