@@ -7,7 +7,7 @@ module.exports = [
   },
   {
     title: 'Popular Movies App',
-    picture: '/img/phone.png',
+    picture: '/img/popularmoviesapp.png',
     description: 'Android Movies App',
     github: 'https://github.com/ashwinath/Android_Popular_Movies_App'
   }

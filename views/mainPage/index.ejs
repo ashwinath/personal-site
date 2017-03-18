@@ -40,13 +40,10 @@
 
   <!-- about me -->
   <section class="about-me">
-    <div class="col-lg-12 text-center header">
-      <h2>About Me</h2>
+    <div class="timeline-container">
+      <% include ../partials/timeline.ejs %>
     </div>
     <div class="container">
-      <p class="about-me-text">
-      I am a self taught developer whom also holds a degree in Business Administration (Marketing). During my university as a marketing student, I learnt a fair bit of computer science as well as programming. I enjoy writing software and still continue to do it as my job, as well as during my free time.
-      </p>
       <div class="col-lg-12 text-center">
         <a href="files/Ashwin-Resume.pdf" class="btn btn-xl" role="button">Download Resume</a>
       </div>
@@ -75,7 +72,7 @@
           </div>
           <div class="portfolio-caption">
             <h4><%= project.title %></h4>
-            <p class="text-grey"><%= project.description %></p>
+            <p class="text-muted"><%= project.description %></p>
           </div>
         </div>
       <% }); %>
@@ -98,9 +95,12 @@
           </div>
         </div>
       <% }); %>
+
       </div>
 
+
     </div>
+
     </section>
     <!-- work history end -->
 
