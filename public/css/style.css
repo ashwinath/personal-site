@@ -28,7 +28,7 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   font-family: 'Comfortaa', cursive;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 5px 5px 5px grey;
 }
 
 .header-intro {
@@ -42,11 +42,11 @@ header {
 }
 
 section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 .portfolio, .contact-me {
-  background: rgba(26,26,26,.3);
+  background: rgba(26,26,26,.1);
 }
 
 .thumbnail {
@@ -58,8 +58,9 @@ section {
 
 .header h2 {
   margin-bottom: 70px;
-  font-size: 5em;
+  font-size: 3em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 input.form-control, text-area.form-control {
@@ -68,6 +69,10 @@ input.form-control, text-area.form-control {
 
 .form-group {
   padding: 0 20px;
+}
+
+.work-exp {
+  padding: 0 0;
 }
 
 .form-control {
@@ -125,4 +130,29 @@ ul.social-buttons li a {
   font-size: 1.5em;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.portfolio-pic-container, .portfolio-caption {
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.portfolio-link img {
+  margin: 0 auto;
+}
+
+.text-grey {
+  color: #777;
+  font-style: italic;
+}
+
+.portfolio-caption {
+  padding: 10px 0;
+}
+
+.portfolio-caption h4 {
+  font-size: 1.2em;
+  font-style: bold;
+  font-weight: 700;
 }
