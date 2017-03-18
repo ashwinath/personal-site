@@ -28,15 +28,15 @@ header {
   padding-top: 200px;
   padding-bottom: 200px;
   font-family: 'Comfortaa', cursive;
-  text-shadow: 5px 5px 5px grey;
+  text-shadow: 5px 5px 5px #000;
 }
 
 .header-intro {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .header-intro-message {
-  font-size: 6em;
+  font-size: 4em;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -45,7 +45,7 @@ section {
   padding: 70px 0;
 }
 
-.portfolio, .contact-me {
+.portfolio, .contact-me, .services {
   background: rgba(26,26,26,.1);
 }
 
@@ -54,6 +54,10 @@ section {
   background: transparent;
   border: 0 none;
   box-shadow:none;
+}
+
+.thumbnail img {
+  max-height: 100px;
 }
 
 .header h2 {
@@ -152,10 +156,18 @@ ul.social-buttons li a {
   padding: 10px 0;
 }
 
-.portfolio-caption h4 {
+.portfolio-caption h4, .services-title {
   font-size: 1.2em;
   font-style: bold;
   font-weight: 700;
+}
+
+.services-icon-color {
+  color: #fed136;
+}
+
+.services-row {
+  padding-bottom: 50px;
 }
 
 
