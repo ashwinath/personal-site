@@ -45,6 +45,10 @@ section {
   padding: 70px 0;
 }
 
+.portfolio-item {
+  margin: 0 0 50px;
+}
+
 .portfolio, .contact-me, .services {
   background: rgba(26,26,26,.1);
 }
@@ -137,15 +141,14 @@ ul.social-buttons li a {
 }
 
 .portfolio-pic-container, .portfolio-caption {
-  max-width: 400px;
   text-align: center;
   background-color: #fff;
 }
 
 .portfolio-pic-container {
+  position: relative;
   overflow: hidden;
-  min-height: 256px;
-  max-height: 256px;
+  margin: 0 auto;
 }
 
 .portfolio-link img {
@@ -154,11 +157,11 @@ ul.social-buttons li a {
 
 .portfolio-caption {
   padding: 10px 0;
+  margin: 0 auto;
 }
 
 .portfolio-caption h4, .services-title {
   font-size: 1.2em;
-  font-style: bold;
   font-weight: 700;
 }
 
@@ -170,6 +173,9 @@ ul.social-buttons li a {
   padding-bottom: 50px;
 }
 
+.portfolio-frame {
+  text-align: center;
+}
 
 /*
  * Timeline template css

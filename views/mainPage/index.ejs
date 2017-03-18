@@ -107,16 +107,18 @@
       <div class="row">
 
       <% portfolio.forEach(project => { %>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <div class="portfolio-pic-container">
-            <!-- there should be a link when hovered here eventually -->
-            <a class="portfolio-link" href="<%= project.github %>">
-              <img class="img-responsive" src="<%= project.picture %>">
-            </a>
-          </div>
-          <div class="portfolio-caption">
-            <h4><%= project.title %></h4>
-            <p class="text-muted"><%= project.description %></p>
+        <div class="col-md-4">
+          <div class="portfolio-item text-center">
+            <div class="portfolio-pic-container">
+              <!-- there should be a link when hovered here eventually -->
+              <a class="portfolio-link" href="<%= project.github %>">
+                <img class="img-responsive" src="<%= project.picture %>">
+              </a>
+            </div>
+            <div class="portfolio-caption">
+              <h4><%= project.title %></h4>
+              <p class="text-muted"><%= project.description %></p>
+            </div>
           </div>
         </div>
       <% }); %>
