@@ -26,7 +26,7 @@ router.use(session({cookie: {maxAge: 60000}}))
 
 // MAIN PAGE
 router.get('/', (req, res) => {
-  console.log(`[${new Date()}] ${GET_REQUEST_LOG}`);
+  console.log(`[${new Date()}][${req.headers['user-agent']}] ${GET_REQUEST_LOG}`);
   res.render('mainPage/index', 
     { 
       portfolio: portfolio, 
